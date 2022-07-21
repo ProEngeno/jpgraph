@@ -64,5 +64,10 @@
     },
     "support": {
         "issues": "https://github.com/huasofoundries/jpgraph/issues"
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
     }
 }
