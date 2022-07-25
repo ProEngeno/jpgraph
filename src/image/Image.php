@@ -1045,8 +1045,8 @@ class Image
                 $this->img,
                 $this->font_size,
                 $dir,
-                $x,
-                $y,
+                (int) $x,
+                (int) $y,
                 $this->current_color,
                 $this->font_file,
                 $txt
