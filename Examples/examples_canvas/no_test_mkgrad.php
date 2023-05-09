@@ -80,9 +80,9 @@ class Form
 
     public function GenHTMLSelect($name, $option, $selected = '', $size = 0)
     {
-        $txt = "<select name=${name}";
+        $txt = "<select name={$name}";
         if ($size > 0) {
-            $txt .= " size=${size} >";
+            $txt .= " size={$size} >";
         } else {
             $txt .= '>';
         }
@@ -99,9 +99,9 @@ class Form
 
     public function GenHTMLSelectCode($name, $option, $selected = '', $size = 0)
     {
-        $txt = "<select name=${name}";
+        $txt = "<select name={$name}";
         if ($size > 0) {
-            $txt .= " size=${size} >";
+            $txt .= " size={$size} >";
         } else {
             $txt .= '>';
         }
@@ -164,7 +164,7 @@ class Driver
 
         if ($aFileName != '') {
             $this->graph->Stroke($aFileName);
-            echo "Image file '${aFileName}' created.";
+            echo "Image file '{$aFileName}' created.";
         } else {
             $this->graph->Stroke();
         }

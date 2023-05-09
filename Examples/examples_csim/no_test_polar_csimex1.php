@@ -18,7 +18,7 @@ $data = [0, 1, 10, 2, 30, 25, 40, 60,
 
 $n = count($data);
 for ($i = 0; $i < $n; ++$i) {
-    $targets[$i] = "#${i}";
+    $targets[$i] = "#{$i}";
 }
 
 $__width  = 350;

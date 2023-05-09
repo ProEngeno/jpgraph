@@ -33,7 +33,7 @@ class TestDriver
             $aDir = __DIR__;
         }
         if (!chdir($aDir)) {
-            die("PANIC: Can't access directory : ${aDir}");
+            die("PANIC: Can't access directory : {$aDir}");
         }
         $this->iDir       = $aDir;
         $this->exampleDir = $folder;
@@ -127,7 +127,7 @@ class TestDriver
         $n = count($files);
         echo '<h2>Visual test suit for JpGraph</h2>';
         echo 'Testtype: ' . ($this->iType == 1 ? ' Standard images ' : ' Image map tests ');
-        echo "<br>Number of tests: ${n}<p>";
+        echo "<br>Number of tests: {$n}<p>";
         echo '<ul>';
 
         for ($i = 0; $i < $n; ++$i) {

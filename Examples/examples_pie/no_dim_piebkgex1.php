@@ -42,7 +42,7 @@ $graph->title->SetColor('white');
 $p = [];
 // Create the plots
 for ($i = 0; $i < $n; ++$i) {
-    $d   = "data${i}";
+    $d   = "data{$i}";
     $p[] = new Plot\PiePlot3D($data[$i]);
 }
 

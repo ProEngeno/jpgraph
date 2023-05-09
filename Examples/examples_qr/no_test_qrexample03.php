@@ -26,4 +26,4 @@
     $backend->Stroke($data, $fileName);
     list($version, $errorcorrection) = $backend->GetQRInfo();
 
-    echo "QR Barcode, (<b>Version: ${version}-${errorcorrection}</b>), image stored in file ${fileName}";
+    echo "QR Barcode, (<b>Version: {$version}-{$errorcorrection}</b>), image stored in file {$fileName}";
